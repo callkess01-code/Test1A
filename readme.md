@@ -8,13 +8,12 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">AD - CI4 Template</h3>
+  <h3 align="center">BeatSync — EDM Events & Music Festivals Platform</h3>
 </div>
 
 <!-- * Description Section -->
 <div align="center">
-This repository is a beginner-friendly CodeIgniter 4 template.  
-It helps teams quickly bootstrap backend + frontend projects, with simple sample modules that show how to extend the system.
+BeatSync is a modern PHP-based platform for electronic dance music (EDM) lovers to discover, follow, and book tickets for festivals, live DJ performances, and club events. Built with vanilla PHP, HTML, CSS, and JavaScript, it focuses on a lightweight, mobile-first experience with event discovery, user authentication, and newsletter subscriptions.
 </div>
 
 <br/>
@@ -55,24 +54,35 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
-
-It is designed to be **easy to start with** and a **reference for adding new features**.
-
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
+BeatSync is a modern web platform that helps electronic dance music (EDM) enthusiasts discover and book tickets for music festivals, live DJ performances, and dance events. The platform emphasizes fast, mobile-first browsing, clear event listings, and simple account flows. It's implemented with vanilla PHP for server-side rendering and is easy to extend with a database-backed backend when you're ready.
 
 ### Key Components
 
-These are **sample modules** included (or suggested) for learning how to add features:
+The main modules included in this project are:
 
-| Component                 | Purpose                                                             | Notes                                                   |
-| ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
-| **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
-| **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
+- Auth (Login / Signup)
+  - Purpose: User authentication and session management.
+  - Files / examples: `login.php`, `signup.php`, `login.js`, `signup.js`.
+  - Notes: Email/password validation, password visibility toggle, client-side validation, and session-based authentication.
 
- <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
+- Landing Page
+  - Purpose: Main homepage showcasing upcoming EDM events and platform features.
+  - Files / examples: `landing.php`, `css/style.css`, `js/script.js`.
+  - Notes: Dynamic event cards, hero CTA, newsletter subscription form, responsive mobile menu.
+
+- Event Management System
+  - Purpose: Display and manage EDM events.
+  - Notes: Uses PHP-array-driven sample data (ready to be replaced by a DB), event slider with navigation, event cards with date/location, and hooks for search and filters.
+
+- Newsletter System
+  - Purpose: Email subscription handling for updates and promotions.
+  - Notes: Server-side email validation (`FILTER_VALIDATE_EMAIL`), success/error notifications, and easy integration with external email providers.
+
+- Project Planning Pages
+  - Purpose: Visual and planning documentation (`moodboard.php`, `roadmap.php`).
+  - Notes: Mood board for design direction and roadmap for planned features and milestones.
+
+<!-- Use these components as a practical starting point — adapt or replace them as the product and architecture evolve. -->
 
 ### Technology
 
